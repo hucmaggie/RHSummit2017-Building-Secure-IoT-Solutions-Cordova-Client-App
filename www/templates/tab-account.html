@@ -1,0 +1,43 @@
+<ion-view view-title="Settings">
+  <ion-content class="padding">
+    <div class="list" ng-show="noticeMessage">
+      <span class="item noticeMessage" >
+        <p class="noticeMessage"><b>{{noticeMessage}}</b></p>
+      </span>
+    </div>
+    <ion-list>
+    <ion-toggle  ng-model="settings.enablePush">
+        Enable push notifications
+    </ion-toggle>
+    </ion-list>
+    <h4>Login</h4>
+    <form>
+      <div class="list list-inset" data-ng-init="initCredentials()">
+        <label class="item item-input">
+          <input ng-model="login.username" type="text" placeholder="Username">
+        </label>
+        <label class="item item-input">
+          <input ng-model="login.password" type="password" placeholder="Password">
+        </label>
+        <label class="item item-input">
+          <input ng-model="login.ip" type="text" placeholder="IP"></input>
+        </label>
+        <label class="item item-input">
+          <input ng-model="login.port" type="text" placeholder="Port"></input>
+        </label>
+        <button type="button" class="button button-block button-stable" ng-click="setLoginCredentials()">
+          Set login
+        </button>
+      </div>
+    </form>
+    <div class="aboutContent">
+          <p>This mobile app is part of the 'All in One IoT Demo' from Patrick Steiner. You can connect
+            yourself with the BPM Suite of the demo.</p>
+          <p>For any further questions you can ask
+          <br> Patrick Steiner: <a href="mailto:psteiner@redhat.com">psteiner@redhat.com</a>
+          <br> Maggie Hu: <a href="mailto:mhu@redhat.com">mhu@redhat.com</a></p>
+          <p>For more information about the 'All in One IoT Demo' or this mobile app have a look at
+          <br><br><a href="http://www.opensourcerers.org/" class="myOpenSourcerersLink">www.opensourcerers.org</a></p>
+    </div>
+  </ion-content>
+</ion-view>

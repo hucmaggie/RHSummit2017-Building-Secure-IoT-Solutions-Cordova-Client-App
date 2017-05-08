@@ -1,0 +1,12 @@
+{
+  "appid": "3ppop5abgasqikic43mer7ty",
+  "appkey": "a508c6f07bdfffd6eddb6163f37d9c372d83bc22",
+  "apptitle": "IoT Demo Client App",
+  "connectiontag": "0.0.2",
+  "host": "https://mhu.us.demos.redhatmobile.com",
+  "ios": {
+    "variantID": "4d071363-d850-483c-9c81-0ebccfce4ad7",
+    "variantSecret": "9d334d09-3eeb-4150-914f-893721516178"
+  },
+  "projectid": "3ppop5h6x2dzm6wsr3rj5hty"
+}
